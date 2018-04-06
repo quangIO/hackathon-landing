@@ -106,3 +106,18 @@ site-layout title="WomenHack"
         div.wow.shake data-wow-offset="30" data-wow-iteration="2"
           // span.blinker
           b -- Nhà tài trợ
+    hero-card
+      @title
+        b -- Liên hệ
+      @content
+        div.container.has-text-centered
+          form name="contact" method="POST" netlify
+            p
+              input type="text" name="name" placeholder="Tên của bạn"
+            p
+              input type="email" name="email" placeholder="Email"
+            p
+              textarea name="message" placeholder="Nội dung tin nhắn"
+            div data-netlify-recaptcha
+            p
+              a.gbutton -- Gửi
