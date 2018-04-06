@@ -1,0 +1,9 @@
+section.hero
+  div.hero-head
+    h1.title.has-text-centered.has-text-weight-extra-light
+      <include(input.title)/>
+  div.hero-body
+    div.container
+      p.has-text-white.has-text-weight-light.summary if(input.summary)
+        <include(input.summary)/>
+    <include(input.content)/>
