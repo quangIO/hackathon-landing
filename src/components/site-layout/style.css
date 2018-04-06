@@ -109,18 +109,20 @@ button::-moz-focus-inner {
 .section--about-us {
 }
 
-.rotate-left {
-  transform: rotate(-5deg);
-}
-.rotate-left-light {
-  transform: rotate(-2deg);
-}
-.rotate-right {
-  transform: rotate(5deg);
-}
+@media all and (min-width: 1024px) {
+  .rotate-left {
+    transform: rotate(-5deg);
+  }
+  .rotate-left-light {
+    transform: rotate(-3deg);
+  }
+  .rotate-right {
+    transform: rotate(5deg);
+  }
 
-.rotate-right-light {
-  transform: rotate(2deg);
+  .rotate-right-light {
+    transform: rotate(3deg);
+  }
 }
 
 .section--faq {
