@@ -1,4 +1,11 @@
-section.hero
+class {
+  onInput(input) {
+    console.log(input['id']);
+    console.log(input['class']);
+  }
+}
+
+section.hero class=[input['class']] id=[input['id']]
   div.hero-head
     h1.title.has-text-centered.has-text-weight-extra-light
       <include(input.title)/>

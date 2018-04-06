@@ -93,13 +93,29 @@ button::-moz-focus-inner {
   /* background: linear-gradient(135deg,#F54EA2,#FF7676); */
 }
 
-#landing-2 {
-
-}
 
 .summary {
   font-size: 1.3rem;
   font-weight: 300;
+}
+
+.section--faq {
+  background-repeat:no-repeat;
+  background-image:url(//github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-teletype-graphic-003d3ac7f8f35c1d36c0b49d76c9260b.svg);
+  background-position:calc(50% + 1000px) center
+}
+
+.section--intro {
+  background-repeat:no-repeat;
+  background-image:url(./rose.svg);
+  background-position:calc(15% - 200px) center;
+}
+
+.section--landing {
+  background-repeat:no-repeat;
+  background-image:url(./hair.svg);
+  background-size: contain;
+  background-position:calc(100% + 70px) center;
 }
 
 .question-answer b {

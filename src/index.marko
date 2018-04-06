@@ -1,6 +1,6 @@
 site-layout title="WomenHack"
   @content
-    section.hero.is-fullheight#landing-1
+    section.hero.is-fullheight.section--landing
       div.hero-body.has-text-centered-mobile
         div.container
           h1.title.title-landing.is-size-1-mobile.animated.bounceInRight -- WomenHack
@@ -9,9 +9,9 @@ site-layout title="WomenHack"
           a.btn.btn-info.is-bold.animated.zoomInDown
             -- Register
             span.arrow -- ❯
-    hero-card
+    hero-card.section--intro
       @title
-        b -- Về [tên hackathon]
+        b#intro -- Về [tên hackathon]
       @summary
         -- Ut tempor incurreret instituendarum, de nulla possumus distinguantur ad ab nisi efflorescere, deserunt quae ipsum ne anim non qui quis constias iudicem a te id malis proident et commodo cillum senserit occaecat, iis amet aute anim ullamco. Minim laboris vidisse, quid aliquip de irure irure. Ne expetendis ut officia, quem a fabulas. Senserit te veniam.Incurreret o doctrina te an non summis arbitror. Esse instituendarum appellat malis vidisse. Litteris an amet nescius.
     hero-card
@@ -55,11 +55,11 @@ site-layout title="WomenHack"
               @introduction
                 -- Noster consequat id probant id aut fugiat minim ubi offendit, quo enim eiusmod domesticarum, velit litteris de consectetur.
     hr
-    hero-card
+    hero-card.section--faq#faq
       @title
         div.wow.pulse data-wow-duration="1.5s" data-wow-offset="70" data-wow-iteration="2"
           // span.blinker
-          b#faq -- Câu hỏi thường gặp
+          b -- Câu hỏi thường gặp
       @content
         div.container.question-answer
           div.columns
