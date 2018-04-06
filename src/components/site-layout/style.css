@@ -100,16 +100,33 @@ button::-moz-focus-inner {
   font-weight: 300;
 }
 
-.section--faq {
-  background-repeat:no-repeat;
-  background-image:url(//github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-teletype-graphic-003d3ac7f8f35c1d36c0b49d76c9260b.svg);
-  background-position:calc(50% + 1000px) center
-}
-
 .section--intro {
   background-repeat:no-repeat;
   background-image:url(./rose.svg);
   background-position:calc(15% - 200px) calc(50% + 50px);
+}
+
+.section--about-us {
+}
+
+.rotate-left {
+  transform: rotate(-5deg);
+}
+.rotate-left-light {
+  transform: rotate(-2deg);
+}
+.rotate-right {
+  transform: rotate(5deg);
+}
+
+.rotate-right-light {
+  transform: rotate(2deg);
+}
+
+.section--faq {
+  background-repeat:no-repeat;
+  background-image:url(//github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/index-teletype-graphic-003d3ac7f8f35c1d36c0b49d76c9260b.svg);
+  background-position:calc(50% + 1000px) center;
 }
 
 .section--landing {
@@ -117,6 +134,13 @@ button::-moz-focus-inner {
   background-image:url(./hair.svg);
   background-size: contain;
   background-position:calc(100% + 70px) center;
+}
+
+.section--contact {
+  background-repeat:no-repeat;
+  background-image:url(./email.svg);
+  background-size: 30%;
+  background-position:100% center;
 }
 
 .question-answer b {

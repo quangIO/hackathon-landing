@@ -18,7 +18,7 @@ site-layout title="WomenHack"
         b#intro -- Về [tên hackathon]
       @summary
         -- Ut tempor incurreret instituendarum, de nulla possumus distinguantur ad ab nisi efflorescere, deserunt quae ipsum ne anim non qui quis constias iudicem a te id malis proident et commodo cillum senserit occaecat, iis amet aute anim ullamco. Minim laboris vidisse, quid aliquip de irure irure. Ne expetendis ut officia, quem a fabulas. Senserit te veniam.Incurreret o doctrina te an non summis arbitror. Esse instituendarum appellat malis vidisse. Litteris an amet nescius.
-    hero-card
+    hero-card.section--about-us
       @title
         div.wow.pulse data-wow-duration="1s" data-wow-offset="30" data-wow-iteration="2"
           span.blinker
@@ -58,12 +58,12 @@ site-layout title="WomenHack"
             user-profile name="Lorem" header="@NYU"
               @introduction
                 -- Noster consequat id probant id aut fugiat minim ubi offendit, quo enim eiusmod domesticarum, velit litteris de consectetur.
-    hr
-    hero-card.section--faq#faq
+    hr.rotate-left
+    hero-card.section--faq.rotate-left
       @title
         div.wow.pulse data-wow-duration="1.5s" data-wow-offset="70" data-wow-iteration="2"
           // span.blinker
-          b -- Câu hỏi thường gặp
+          b#faq -- Câu hỏi thường gặp
       @content
         div.container.question-answer
           div.columns
@@ -75,7 +75,7 @@ site-layout title="WomenHack"
               p -- Không sao cả. [TODO]
           div.columns data-wow-delay=".2s"
             div.column.wow.bounceInLeft
-              b -- Có cần phải team trước khi đến không?
+              b -- Cần phải có team trước khi đến không?
               p -- Không. Trước khi hackathon bắt đầu [TODO]
             div.column.wow.bounceInRight
               b -- Lúc đi nên mang gì?
@@ -94,30 +94,41 @@ site-layout title="WomenHack"
             div.column.wow.bounceInRight
               b -- Các bạn trả lời câu hỏi của mình kĩ hơn được không?
               p -- Trong trường hợp không tìm được câu trả lời thỏa đáng hoặc cô đơn tìm người tâm sự, đừng ngại liên hệ bọn tớ qua email [TODO] hoặc facebook
-
-    hero-card
+    hr.rotate-right
+    hero-card.section--speaker
       @title
         div.wow.pulse data-wow-duration="1s" data-wow-offset="30" data-wow-iteration="2"
           // span.blinker
-          b -- Diễn giả
-
-    hero-card
+          b#speaker -- Diễn giả
+      @content
+        div.container.summary
+          -- Nisi nescius a relinqueret, excepteur ex mandaremus hic excepteur praesentibus hic nostrud nam laboris quem multos ad anim. Nam sunt iudicem o tempor excepteur  commodo sed consequat praetermissum ea laboris, noster possumus voluptatibus  te et cupidatat ex ingeniis e ullamco tamen sint id legam id deserunt eram nam admodum coniunctione, eu tamen velit ita pariatur. Malis quamquam familiaritatem.Nescius qui mandaremus. An te sunt mandaremus, et anim ad amet, a quis veniam labore mandaremus, litteris comprehenderit an quibusdam. Quae eiusmod concursionibus, hic sunt illustriora, malis offendit constias, a deserunt tractavissent ea anim senserit distinguantur, ullamco dolore veniam ab nulla est ea legam dolor ea quibusdam ex ubi tempor nostrud reprehenderit.
+    hr
+    hero-card.section--sponsor.rotate-right-light
       @title
         div.wow.shake data-wow-offset="30" data-wow-iteration="2"
           // span.blinker
-          b -- Nhà tài trợ
-    hero-card
+          b#sponsor -- Nhà tài trợ
+      @content
+        div.container.summary
+          -- Nisi nescius a relinqueret, excepteur ex mandaremus hic excepteur praesentibus hic nostrud nam laboris quem multos ad anim. Nam sunt iudicem o tempor excepteur  commodo sed consequat praetermissum ea laboris, noster possumus voluptatibus  te et cupidatat ex ingeniis e ullamco tamen sint id legam id deserunt eram nam admodum coniunctione, eu tamen velit ita pariatur. Malis quamquam familiaritatem.Nescius qui mandaremus. An te sunt mandaremus, et anim ad amet, a quis veniam labore mandaremus, litteris comprehenderit an quibusdam. Quae eiusmod concursionibus, hic sunt illustriora, malis offendit constias, a deserunt tractavissent ea anim senserit distinguantur, ullamco dolore veniam ab nulla est ea legam dolor ea quibusdam ex ubi tempor nostrud reprehenderit.
+    hero-card.section--contact.rotate-left
       @title
         b -- Liên hệ
       @content
-        div.container.has-text-centered
-          form name="contact" method="POST" netlify
-            p
-              input type="text" name="name" placeholder="Tên của bạn"
-            p
-              input type="email" name="email" placeholder="Email"
-            p
-              textarea name="message" placeholder="Nội dung tin nhắn"
-            div data-netlify-recaptcha
-            p
-              a.gbutton -- Gửi
+        div.container
+          div.columns
+            div.column.has-text-centered
+              form name="contact" method="POST" netlify
+                p
+                  input type="text" name="name" placeholder="Tên của bạn"
+                p
+                  input type="email" name="email" placeholder="Email"
+                p
+                  textarea name="message" placeholder="Nội dung tin nhắn"
+                div.has-text-centered data-netlify-recaptcha
+                p
+                  a.gbutton -- Gửi
+            div.column.is-pulled-right
+              h3 -- Email: abc@abc.com
+              h3 -- Facebook: @ggg
