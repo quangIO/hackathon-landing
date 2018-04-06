@@ -41,6 +41,7 @@ body, .title, h1, h2, h3, h4, h5, h6, p {
   padding: 0 0 0 1em;
   margin-bottom: 1em;
   margin-top: 1em;
+  margin-left: 1em;
   outline: none;
   text-decoration: none;
   color: #666;
@@ -108,7 +109,7 @@ button::-moz-focus-inner {
 .section--intro {
   background-repeat:no-repeat;
   background-image:url(./rose.svg);
-  background-position:calc(15% - 200px) center;
+  background-position:calc(15% - 200px) calc(50% + 50px);
 }
 
 .section--landing {
