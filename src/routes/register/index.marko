@@ -7,7 +7,7 @@ site-layout
   @content
     br
     br
-    hero-card
+    hero-card#section--register
       @title
         -- Đăng kí
       @content
@@ -36,61 +36,4 @@ site-layout
               <div class="test"></div>
             </div>
           div.column
-            form action="https://formaholic.com/f/a026d1f3ce6f9baf" method="POST"
-              input type="text" name="_gotcha" style="display:none"
-              div.field
-                label.label for="name" -- Tên
-                div.control
-                  <input id="name" name="name" placeholder="Tên đầy đủ của bạn"
-                  required="required" type="text"/>
-              div.field
-                <label class="label" for="phone">Số điện thoại</label>
-                div.control
-                  <input.input-text id="phone" name="phone" placeholder="091xxxxxxx"
-                  required="required" type="tel"/>
-
-              div.field
-                <label class="label" for="email">Email</label>
-                div.control
-                  <input.input-text id="email" name="email" placeholder="Địa chỉ email"
-                  required="required" type="email"/>
-
-              div.field
-                <label class="label" for="age">Tuổi</label>
-                div.control
-                  <input.input-text id="age" name="age" placeholder="18" required="required" type="number" min="13" max="100" />
-              div.field
-                <label class="label" for="intro">
-                  Giới thiệu qua về bạn (sở thích, vai trò muốn làm trong team, project muốn làm...)
-                </label>
-                div.control
-                  <textarea id="intro" name="intro" cols="40" rows="5" class="form-control"
-                    aria-describedby="introHelpBlock"/>
-                p.help -- (không bắt buộc)
-              div.field
-                label.label -- Ăn uống
-                div.pretty.p-default.p-curve.p-thick.p-smooth
-                  input.checkbox name="vegan" value="true" type="checkbox"
-                  div.state.p-primary
-                    label -- Vegan
-                div.pretty.p-default.p-curve.p-thick.p-smooth
-                  input.checkbox name="pizza" value="true" type="checkbox"
-                  div.state.p-primary
-                    label -- Don't you dare to put pineapples on my Pizza
-                div.pretty.p-default.p-curve.p-thick.p-smooth
-                  input.checkbox name="milkTea" value="true" type="checkbox"
-                  div.state.p-primary
-                    label -- Nghiện trà sữa
-              br
-              br
-              div.pretty.p-default.p-curve.p-thick.p-smooth
-                input.checkbox name="agree" value="true" checked="checked" type="checkbox"
-                div.state.p-success
-                  label -- Tôi đông ý với các điều khoản đã quy định.
-              div.pretty.p-default.p-curve.p-thick.p-smooth
-                input.checkbox name="wantTeam" value="true" checked="checked" type="checkbox"
-                div.state.p-primary
-                  label -- Tôi muốn ban tổ chức giúp tìm team
-              div.field
-                br
-                <button on-click('postForm') name="submit" type="submit" class="gbutton">Submit</button>
+            register-form

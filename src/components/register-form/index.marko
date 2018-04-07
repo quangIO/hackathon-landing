@@ -1,0 +1,119 @@
+class {
+  postForm(e) {
+    e.preventDefault();
+    let form = e.target.form;
+    for (let i = 0; i < form.length; ++i) {
+      console.log(form[i].name + " " + ((form[i].type == 'checkbox') ? form[i].checked : form[i].value));
+    }
+  }
+}
+form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="POST"
+  input type="text" name="_gotcha" style="display:none"
+  div.field
+    label.label for="name" -- Tên
+    div.control
+      <input id="name" name="name" placeholder="Tên đầy đủ của bạn"
+      required="required" type="text"/>
+  div.field
+    <label class="label" for="phone">Số điện thoại</label>
+    div.control
+      <input.input-text id="phone" name="phone" placeholder="091xxxxxxx"
+      required="required" type="tel"/>
+
+  div.field
+    <label class="label" for="email">Email</label>
+    div.control
+      <input.input-text id="email" name="email" placeholder="Địa chỉ email"
+      required="required" type="email"/>
+
+  div.field
+    <label class="label" for="age">Tuổi</label>
+    div.control
+      <input.input-text id="age" name="age" placeholder="18" required="required" type="number" min="13" max="100" />
+  div.field
+    <label class="label" for="intro">
+      Giới thiệu qua về bạn (sở thích, vai trò muốn làm trong team, project muốn làm...)
+    </label>
+    div.control
+      <textarea id="intro" name="intro" cols="40" rows="5" class="form-control"
+        aria-describedby="introHelpBlock"/>
+    p.help -- (không bắt buộc)
+  div.field
+    label.label -- Ăn uống
+    div.pretty.p-default.p-curve.p-thick.p-smooth
+      input.checkbox name="vegan" value="true" type="checkbox"
+      div.state.p-primary
+        label -- Vegan
+    div.pretty.p-default.p-curve.p-thick.p-smooth
+      input.checkbox name="pizza" value="true" type="checkbox"
+      div.state.p-primary
+        label -- Don't you dare to put pineapples on my Pizza
+    div.pretty.p-default.p-curve.p-thick.p-smooth
+      input.checkbox name="milkTea" value="true" type="checkbox"
+      div.state.p-primary
+        label -- Nghiện trà sữa
+  br
+  br
+  div.pretty.p-default.p-curve.p-thick.p-smooth
+    input.checkbox name="agree" value="true" checked="checked" type="checkbox" disabled
+    div.state.p-success
+      label -- Tôi đông ý với các điều khoản đã quy định.
+  div.pretty.p-default.p-curve.p-thick.p-smooth
+    input.checkbox name="wantTeam" value="true" checked="checked" type="checkbox"
+    div.state.p-primary
+      label -- Tôi muốn ban tổ chức giúp tìm team
+  div.field
+    br
+    button#submit-form name="submit" type="submit" class="gbutton" -- Submit
+script src="https://code.jquery.com/jquery-3.3.1.min.js"
+<script>
+  (function ($) {
+      $.fn.serializeFormJSON = function () {
+          var o = {};
+          var a = this.serializeArray();
+          $.each(a, function () {
+              if (o[this.name]) {
+                  if (!o[this.name].push) {
+                      o[this.name] = [o[this.name]];
+                  }
+                  o[this.name].push(this.value || '');
+              } else {
+                  o[this.name] = this.value || '';
+              }
+          });
+          return o;
+      };
+  })(jQuery);
+  var $form = $('#form--register');
+  //var url = 'https://script.google.com/macros/s/AKfycbxzi9nFlQOb-lCg1MJ8AbrswF8b6ATol5mX5fgpiuzoxcoun5jp/exec';
+  var url = 'https://script.google.com/macros/s/AKfycbxzi9nFlQOb-lCg1MJ8AbrswF8b6ATol5mX5fgpiuzoxcoun5jp/exec';
+  function validateData(data) {
+
+  }
+  $('#submit-form').on('click', function(e) {
+    let vm = this;
+    e.preventDefault();
+    let data = $('#form--register').serializeFormJSON();
+    console.log(data);
+    let jqxhr = $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: $('#form--register').serializeFormJSON(),
+      error: function (xhr, ajaxOptions, thrownError) {
+        alert(xhr.responseText);
+      },
+      success: function (data) {
+          console.log(data);
+          if (data.error) {
+            alert(data.error);
+          } else {
+            alert("Đăng kí thành công");
+            window.location.href="/#faq";
+          }
+      },
+    }).then(
+      // do something
+    );
+  })
+</script>
