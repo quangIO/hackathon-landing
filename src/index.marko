@@ -1,4 +1,7 @@
 site-layout title="WomenHack"
+  @include
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
   @content
     section.hero.is-fullheight.section--landing
       div.hero-body.has-text-centered-mobile
@@ -7,7 +10,7 @@ site-layout title="WomenHack"
           h2.is-size-3.is-size-4-mobile.animated.slideInUp -- 7/7/2018 - 8/7/2018
           h4.is-size-4.is-size-5-mobile.animated.slideInUp -- Hanoi, Vietnam
           div.columns
-            a.btn.btn-info.is-bold.animated.zoomInDown
+            a.btn.btn-info.is-bold.animated.zoomInDown target="_blank" href="/register"
               -- Đăng kí
               span.arrow -- ❯
             a.btn.is-bold.animated.zoomInDown
@@ -94,7 +97,7 @@ site-layout title="WomenHack"
             div.column.wow.bounceInRight
               b -- Các bạn trả lời câu hỏi của mình kĩ hơn được không?
               p -- Trong trường hợp không tìm được câu trả lời thỏa đáng hoặc cô đơn tìm người tâm sự, đừng ngại liên hệ bọn tớ qua email [TODO] hoặc facebook
-    hr.rotate-right-light
+    hr
     hero-card.section--speaker
       @title
         div.wow.pulse data-wow-duration="1s" data-wow-offset="30" data-wow-iteration="2"
@@ -128,7 +131,7 @@ site-layout title="WomenHack"
                 p.has-text-centered
                   div data-netlify-recaptcha
                 p
-                  a.gbutton -- Gửi
+                  button.gbutton name="submit" type="submit" -- Gửi
             div.column.is-pulled-right
               h3 -- Email: abc@abc.com
               h3 -- Facebook: @ggg

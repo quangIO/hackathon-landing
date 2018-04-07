@@ -193,7 +193,7 @@ hr {
 }
 
 
-input, textarea {
+input[type=text], input[type="email"], textarea, .input-text {
   display: inline-block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -206,8 +206,7 @@ input, textarea {
   overflow: hidden;
   margin: 8px;
   border: none;
-  -webkit-border-radius: 21px;
-  border-radius: 21px;
+  border-radius: 5px;
   color: rgba(140,140,140,1);
   text-decoration: normal;
   -o-text-overflow: ellipsis;
@@ -221,7 +220,7 @@ input, textarea {
   transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
 }
 
-input {
+input[type=text], input[type="email"], .input-text {
   height: 42px;
 }
 
@@ -229,7 +228,15 @@ textarea {
   padding: 20px;
 }
 
-input:hover, textarea:hover {
+.label {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+
+
+input[type=text]:hover, input[type=email]:hover, textarea:hover, .input-text:hover {
   color: rgba(181,181,181,1);
   background: rgba(0,0,0,0.4);
   -webkit-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
@@ -238,17 +245,18 @@ input:hover, textarea:hover {
   transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
 }
 
-input:focus, textarea:focus {
+input[type=text]:focus, input[type=email]:focus, textarea:focus, .input-text:focus {
   max-width: 700px;
   width: calc(100%);
   cursor: default;
   padding: -13px 20px 0;
-  color: rgba(255,255,255,1);
+  color: rgba(255,255,255,1) !important;
   -webkit-transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
   -moz-transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
   -o-transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
   transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
 }
+
 
 .gbutton {
   outline: 0;
