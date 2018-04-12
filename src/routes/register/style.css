@@ -1,3 +1,23 @@
+.area-blur {
+  text-align: center;
+  color: #fff;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  animation: blur 0.75s ease-out;
+  text-shadow: 0px 0px 1px #fff, 0px 0px 5px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff,
+      0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8,
+      0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
+      0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+  }
+}
+
 .space {
   position: absolute;
   top: 0;

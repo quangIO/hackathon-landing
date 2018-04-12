@@ -20,6 +20,8 @@ body, .title, h1, h2, h3, h4, h5, h6, p {
   font-weight: 200 !important;
 }
 
+.required:after { content:" *"; }
+
 .title.title-landing {
   font-size: 7rem;
 }
@@ -107,6 +109,11 @@ button::-moz-focus-inner {
 }
 
 .section--about-us {
+}
+
+.section--timeline {
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 @media all and (min-width: 1024px) {
