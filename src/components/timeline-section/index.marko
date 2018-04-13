@@ -14,7 +14,8 @@ $ var day2 = [
   ["21:00", "Trò chơi xếp cốc"],
   ["22:00", "Trò chơi fanta"],
   ["23:00", "Trình bày ý tưởng ngẫu hứng"],
-  ["00:30", "Coffee. Ăn đêm"],
+  ["--", ""],
+  ["00:00", "Coffee. Ăn đêm"],
   ["07:00", "Yoga"],
   ["07:30", "Bữa sáng"],
   ["10:30", "Panel #2"],
@@ -27,11 +28,11 @@ section.container.section--timeline
   div.columns
     div.column.is-offset-one-fifth
       span for(s in day1 | status-var=loop)
-        p.wow.fadeInDown data-wow-delay="${loop.getIndex() *  0.1}s" data-wow-offset="100"
+        p.wow.fadeInDown data-wow-delay="${loop.getIndex() *  0.1}s" data-wow-offset="0"
           b -- ${s[0]} ${' '}
           -- ${s[1]}
     div.column
       span for(s in day2 | status-var=loop)
-        p.wow.fadeInDown data-wow-delay="${loop.getIndex() *  0.1}s"
+        p.wow.fadeInDown data-wow-delay="${loop.getIndex() *  0.1}s" data-wow-offset="0"
           b -- ${s[0]} ${' '}
           -- ${s[1]}

@@ -4,21 +4,32 @@ site-layout title="WomenHack"
     link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
   @content
     section.hero.is-fullheight.section--landing
-      div.hero-body.has-text-centered-mobile
+      div.hero-body.has-text-centered
         div.container
-          h1.title.title-landing.is-size-1-mobile.animated.bounceInRight -- WomenHack
-          h2.is-size-3.is-size-4-mobile.animated.slideInUp -- 7/7/2018 - 8/7/2018
-          h4.is-size-4.is-size-5-mobile.animated.slideInUp -- Hanoi, Vietnam
-          div.columns
-            a.btn.btn-info.is-bold.animated.zoomInDown target="_blank" href="/register"
+          // h1.title.title-landing.is-size-1-mobile.animated.bounceInRight -- WomenHack
+          <svg.wow.fadeIn data-wow-duration="4s" viewBox="0 0 960 300" >
+            <symbol id="s-text">
+              <text text-anchor="middle" x="50%" y="80%">GirlyHack</text>
+""            </symbol>
+
+            <g class = "g-ants">
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+          </svg>
+          h2.is-size-3.is-size-4-mobile.wow.slideInUp -- 7/7/2018 - 8/7/2018
+          h4.is-size-4.is-size-5-mobile.wow.slideInUp -- Hanoi, Vietnam
+          div
+            a.btn.btn-info.is-bold.wow.flipInX target="_blank" href="/register"
               -- Đăng kí
               span.arrow -- ❯
-            a.btn.is-bold.animated.zoomInDown
+            a.btn.is-bold.wow.flipInX data-wow-delay="0.3s"
               -- Trở thành nhà tài trợ
               span.arrow -- ❯
     hero-card.section--intro
-      @title
-        b#intro -- Về [tên hackathon]
       @summary
         -- Ut tempor incurreret instituendarum, de nulla possumus distinguantur ad ab nisi efflorescere, deserunt quae ipsum ne anim non qui quis constias iudicem a te id malis proident et commodo cillum senserit occaecat, iis amet aute anim ullamco. Minim laboris vidisse, quid aliquip de irure irure. Ne expetendis ut officia, quem a fabulas. Senserit te veniam.Incurreret o doctrina te an non summis arbitror. Esse instituendarum appellat malis vidisse. Litteris an amet nescius.
     hero-card.section--timeline

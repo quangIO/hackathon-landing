@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|IBM+Plex+Sans+Condensed:200,300,400,500,600&amp;subset=latin-ext,vietnamese');
 html {
   background-color: #1a1a1a !important;
   font-family: 'IBM Plex Sans Condensed', sans-serif !important;
@@ -140,7 +141,6 @@ button::-moz-focus-inner {
 
 .section--landing {
   background-repeat:no-repeat;
-  background-image:url(./hair.svg);
   background-size: contain;
   background-position:calc(100% + 70px) center;
 }
@@ -304,4 +304,48 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus, .input-text:foc
   -moz-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Firefox */
   -webkit-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Safari, Chrome */
   box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* CSS3 */
+}
+
+svg {
+  display: block;
+  font: 17em 'Abel';
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #4D163D;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #BD0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
 }
