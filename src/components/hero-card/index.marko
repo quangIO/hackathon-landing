@@ -4,6 +4,6 @@ section.hero class=[input['class']] id=input['id']
       <include(input.title)/>
   div.hero-body
     div.container
-      p.has-text-white.has-text-weight-light.summary if(input.summary)
+      p.has-text-white.has-text-weight-light.summary.wow.fadeIn if(input.summary) data-wow-offset="150"
         <include(input.summary)/>
     <include(input.content)/>

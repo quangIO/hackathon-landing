@@ -3,8 +3,6 @@ site-layout title="SheCodes: A Girly Hackathon"
     link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
     link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
   @content
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
-    <script>new WOW({offset: 30}).init();</script>
     section.hero.is-fullheight.section--landing
       div.hero-body.has-text-centered
         div.container
@@ -28,7 +26,7 @@ site-layout title="SheCodes: A Girly Hackathon"
             a.btn.btn-info.is-bold.wow.flipInX data-wow-delay="1.6s" target="_blank" href="/register"
               -- Đăng kí
               span.arrow -- ❯
-            a.btn.is-bold.wow.flipInX data-wow-delay="1.8s"
+            a.btn.is-bold.wow.flipInX data-wow-delay="1.8s" href="/#contact-us"
               -- Trở thành nhà tài trợ
               span.arrow -- ❯
     hero-card.section--intro
@@ -45,41 +43,11 @@ site-layout title="SheCodes: A Girly Hackathon"
         div.summary.wow.bounceIn data-wow-duration="0.6s" data-wow-delay=".2s" data-wow-offset="0"
           -- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       @content
-        div.columns
-          div.wow.fadeInRight.column data-wow-delay="0s" data-wow-offset="100"
-            user-profile name="Lorem" header="@NYU"
-              @introduction
-                -- Noster consequat id probant id aut fugiat minim ubi offendit, quo enim eiusmod domesticarum, velit litteris de consectetur.
-          div.wow.fadeInRight.column data-wow-delay="0.2s" data-wow-offset="100"
-            user-profile name="Lorem" header="@NYU"
-              @introduction
-                -- Noster consequat id probant id aut fugiat minim ubi offendit, quo enim eiusmod domesticarum, velit litteris de consectetur.
-          div.wow.fadeInRight.column data-wow-delay="0.6s" data-wow-offset="100"
-            user-profile name="Lorem" header="@NYU"
-              @introduction
-                -- Noster consequat id probant id aut fugiat minim ubi offendit, quo enim eiusmod domesticarum, velit litteris de consectetur.
-          div.wow.fadeInRight.column data-wow-delay="0.9s" data-wow-offset="100"
-            user-profile name="Lorem" header="@NYU"
-              @introduction
-                -- Noster consequat id probant id aut fugiat minim ubi offendit, quo enim eiusmod domesticarum, velit litteris de consectetur.
-
-        div.columns
-          div.wow.fadeInLeft.column data-wow-delay=".6s" data-wow-offset="160"
-            user-profile name="Lorem" header="@NYU"
-              @introduction
-                -- Noster consequat id probant id aut fugiat minim ubi offendit, quo enim eiusmod domesticarum, velit litteris de consectetur.
-          div.wow.fadeInLeft.column data-wow-delay=".3s" data-wow-offset="160"
-            user-profile name="Lorem" header="@NYU"
-              @introduction
-                -- Noster consequat id probant id aut fugiat minim ubi offendit, quo enim eiusmod domesticarum, velit litteris de consectetur.
-          div.wow.fadeInLeft.column data-wow-delay=".0s" data-wow-offset="160"
-            user-profile name="Lorem" header="@NYU"
-              @introduction
-                -- Noster consequat id probant id aut fugiat minim ubi offendit, quo enim eiusmod domesticarum, velit litteris de consectetur.
+        about-section
     hr.rotate-left
     hero-card.section--faq.rotate-left
       @title
-        div.wow.pulse data-wow-duration="1.5s" data-wow-offset="70" data-wow-iteration="2"
+        div.wow.rotateInUpLeft data-wow-duration=".3s" data-wow-offset="70"
           // span.blinker
           b#faq -- Câu hỏi thường gặp
       @content
@@ -89,51 +57,52 @@ site-layout title="SheCodes: A Girly Hackathon"
               b -- Mình tham gia được không?
               p -- Nếu bạn mang giới tính nữ hoặc [LGBT?] trong độ tuổi từ 13 đến 100 [TODO]
             div.column.wow.bounceInRight
-              b -- Mình không biết code thì phải làm sao?
-              p -- Không sao cả. [TODO]
+              b -- Mình không biết code thì sao?
+              p -- Thì bạn sẽ học được nhiều hơn. Trước khi hackathon bắt đầu sẽ có Workshops vô cùng đơn giản và thú vị giúp bạn làm quen với công nghệ thông tin.
           div.columns data-wow-delay=".2s"
             div.column.wow.bounceInLeft
               b -- Cần phải có team trước khi đến không?
-              p -- Không. Trước khi hackathon bắt đầu [TODO]
+              p -- Không, bạn sẽ có thời gian và giúp đỡ từ bọn mình để networking và tìm đội. Nếu bạn thích làm một mình thì cũng không sao cả.
             div.column.wow.bounceInRight
               b -- Lúc đi nên mang gì?
-              p -- [TODO]
+              p -- Những thứ bạn cần để "hacking": Máy tính, điện thoại, phần cứng... Ngoài ra bạn có thể cầm theo bàn chải, khăn mặt.
           div.columns data-wow-delay=".6s"
             div.column.wow.bounceInLeft
               b -- Tại sao hackathon này chỉ giới hạn cho phụ nữ?
               p -- [TODO]
             div.column.wow.bounceInRight
-              b -- Hôm đấy ăn gì?
-              p -- [TODO]
+              b -- Ăn uống thế nào?
+              p -- Bọn mình sẽ cung cấp đồ ăn và coffee miễn phí trong thời gian hackathon.
           div.columns data-wow-delay=".9s"
             div.column.wow.bounceInLeft
               b -- Địa điểm có chỗ ngủ không?
               p -- [TODO]
             div.column.wow.bounceInRight
               b -- Các bạn trả lời câu hỏi của mình kĩ hơn được không?
-              p -- Trong trường hợp không tìm được câu trả lời thỏa đáng hoặc cô đơn tìm người tâm sự, đừng ngại liên hệ bọn tớ qua email [TODO] hoặc facebook
+              p
+                -- Trong trường hợp không tìm được câu trả lời thỏa đáng hoặc cô đơn tìm người tâm sự, đừng ngại
+                a href="/#contact-us" --  liên hệ bọn tớ
     hr
     hero-card.section--speaker
       @title
-        div.wow.pulse data-wow-duration="1s" data-wow-offset="30" data-wow-iteration="2"
+        div.wow.fadeIn data-wow-duration="1s"
           // span.blinker
           b#speaker -- Diễn giả
-      @content
-        div.container.summary.wow.fadeIn
-          -- Nisi nescius a relinqueret, excepteur ex mandaremus hic excepteur praesentibus hic nostrud nam laboris quem multos ad anim. Nam sunt iudicem o tempor excepteur  commodo sed consequat praetermissum ea laboris, noster possumus voluptatibus  te et cupidatat ex ingeniis e ullamco tamen sint id legam id deserunt eram nam admodum coniunctione, eu tamen velit ita pariatur. Malis quamquam familiaritatem.Nescius qui mandaremus. An te sunt mandaremus, et anim ad amet, a quis veniam labore mandaremus, litteris comprehenderit an quibusdam. Quae eiusmod concursionibus, hic sunt illustriora, malis offendit constias, a deserunt tractavissent ea anim senserit distinguantur, ullamco dolore veniam ab nulla est ea legam dolor ea quibusdam ex ubi tempor nostrud reprehenderit. Nisi nescius a relinqueret, excepteur ex mandaremus hic excepteur praesentibus hic nostrud nam laboris quem multos ad anim. Nam sunt iudicem o tempor excepteur  commodo sed consequat praetermissum ea laboris, noster possumus voluptatibus  te et cupidatat ex ingeniis e ullamco tamen sint id legam id deserunt eram nam admodum coniunctione, eu tamen velit ita pariatur. Malis quamquam familiaritatem.Nescius qui mandaremus. An te sunt mandaremus, et anim ad amet, a quis veniam labore mandaremus, litteris comprehenderit an quibusdam. Quae eiusmod concursionibus, hic sunt illustriora, malis offendit constias, a deserunt tractavissent ea anim senserit distinguantur, ullamco dolore veniam ab nulla est ea legam dolor ea quibusdam ex ubi tempor nostrud reprehenderit.
+      @summary
+        -- Nisi nescius a relinqueret, excepteur ex mandaremus hic excepteur praesentibus hic nostrud nam laboris quem multos ad anim. Nam sunt iudicem o tempor excepteur  commodo sed consequat praetermissum ea laboris, noster possumus voluptatibus  te et cupidatat ex ingeniis e ullamco tamen sint id legam id deserunt eram nam admodum coniunctione, eu tamen velit ita pariatur. Malis quamquam familiaritatem.Nescius qui mandaremus. An te sunt mandaremus, et anim ad amet, a quis veniam labore mandaremus, litteris comprehenderit an quibusdam. Quae eiusmod concursionibus, hic sunt illustriora, malis offendit constias, a deserunt tractavissent ea anim senserit distinguantur, ullamco dolore veniam ab nulla est ea legam dolor ea quibusdam ex ubi tempor nostrud reprehenderit. Nisi nescius a relinqueret, excepteur ex mandaremus hic excepteur praesentibus hic nostrud nam laboris quem multos ad anim. Nam sunt iudicem o tempor excepteur  commodo sed consequat praetermissum ea laboris, noster possumus voluptatibus  te et cupidatat ex ingeniis e ullamco tamen sint id legam id deserunt eram nam admodum coniunctione, eu tamen velit ita pariatur. Malis quamquam familiaritatem.Nescius qui mandaremus. An te sunt mandaremus, et anim ad amet, a quis veniam labore mandaremus, litteris comprehenderit an quibusdam. Quae eiusmod concursionibus, hic sunt illustriora, malis offendit constias, a deserunt tractavissent ea anim senserit distinguantur, ullamco dolore veniam ab nulla est ea legam dolor ea quibusdam ex ubi tempor nostrud reprehenderit.
     hero-card.section--sponsor
       @title
-        div.wow.shake data-wow-offset="30" data-wow-iteration="2"
+        div.wow.pulse data-wow-offset="30" data-wow-iteration="2"
           // span.blinker
           b#sponsor -- Nhà tài trợ
-      @content
-        div.container.summary
-          -- Nisi nescius a relinqueret, excepteur ex mandaremus hic excepteur praesentibus hic nostrud nam laboris quem multos ad anim. Nam sunt iudicem o tempor excepteur  commodo sed consequat praetermissum ea laboris, noster possumus voluptatibus  te et cupidatat ex ingeniis e ullamco tamen sint id legam id deserunt eram nam admodum coniunctione, eu tamen velit ita pariatur. Malis quamquam familiaritatem.Nescius qui mandaremus. An te sunt mandaremus, et anim ad amet, a quis veniam labore mandaremus, litteris comprehenderit an quibusdam. Quae eiusmod concursionibus, hic sunt illustriora, malis offendit constias, a deserunt tractavissent ea anim senserit distinguantur, ullamco dolore veniam ab nulla est ea legam dolor ea quibusdam ex ubi tempor nostrud reprehenderit.
+      @summary
+        -- Nisi nescius a relinqueret, excepteur ex mandaremus hic excepteur praesentibus hic nostrud nam laboris quem multos ad anim. Nam sunt iudicem o tempor excepteur  commodo sed consequat praetermissum ea laboris, noster possumus voluptatibus  te et cupidatat ex ingeniis e ullamco tamen sint id legam id deserunt eram nam admodum coniunctione, eu tamen velit ita pariatur. Malis quamquam familiaritatem.Nescius qui mandaremus. An te sunt mandaremus, et anim ad amet, a quis veniam labore mandaremus, litteris comprehenderit an quibusdam. Quae eiusmod concursionibus, hic sunt illustriora, malis offendit constias, a deserunt tractavissent ea anim senserit distinguantur, ullamco dolore veniam ab nulla est ea legam dolor ea quibusdam ex ubi tempor nostrud reprehenderit.
     hero-card.section--contact
       @title
-        b -- Liên hệ
+        div.wow.fadeInUp
+          b#contact-us -- Liên hệ
       @content
-        div.container
+        div.container.wow.fadeIn
           div.columns
             div.column.has-text-centered
               form name="contact" method="POST" netlify
@@ -143,10 +112,13 @@ site-layout title="SheCodes: A Girly Hackathon"
                   input type="email" name="email" placeholder="Email"
                 p
                   textarea name="message" placeholder="Nội dung tin nhắn"
-                p.has-text-centered
-                  div data-netlify-recaptcha
+                div data-netlify-recaptcha
                 p
                   button.gbutton name="submit" type="submit" -- Gửi
-            div.column.is-pulled-right
-              h3 -- Email: abc@abc.com
-              h3 -- Facebook: @ggg
+            div.column.is-pulled-right-desktop.has-text-centered-mobile
+              p
+                a href="mailto:team@shecodes.tech" -- Email Us
+              p
+                a href="#" -- Facebook Page
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <script>new WOW({offset: 30}).init();</script>

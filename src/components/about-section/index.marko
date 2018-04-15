@@ -1,0 +1,36 @@
+$ const profiles = [
+  [
+    ["Mai Tiên", "Babson", ""],
+    ["Đỗ Phương", "Pierce", ""],
+    ["Phan Hiền", "", ""]
+  ],
+  [
+    ["Lương Thế Minh Quang", "NYU", ""],
+    ["Nguyễn Mai", "Minerva", ""],
+    ["Vũ Minh", "Earlham", ""]
+  ],
+  [
+    ["Nguyễn Đức Thành An", "", ""],
+    ["Nguyễn Minh Lộc", "DAV", ""],
+    ["Vũ Thanh Mai", "FTU", ""]
+  ]
+]
+$ const placeholder = "Probant irure cupidatat, sed iis concursionibus aut incurreret export de constias sempiternum sed sint incididunt constias, nostrud qui proident, a adesse senserit hic eu eiusmod familiaritatem ex e cillum veniam ipsum officia."
+$ const animDelay = .15
+$ function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+br
+br
+div.columns for(row in shuffle(profiles) | status-var=loopRow) data-wow-offset="100"
+  div.wow.column class=((loopRow.getIndex() % 2 ? "fadeInLeft" : "fadeInRight")) data-wow-delay="${(loopRow.getIndex() * row.length * 0 + (loopRow.getIndex() % 2 == 0 ? loopCol.getIndex() : (col.length - loopCol.getIndex() - 1))) * animDelay}s" for(col in shuffle(row) | status-var=loopCol)
+    user-profile name=col[0] header=col[1] introduction=placeholder
