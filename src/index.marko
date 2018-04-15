@@ -2,6 +2,7 @@ site-layout title="SheCodes: A Girly Hackathon"
   @include
     link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
     link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    <style>.wow { visibility: hidden; }</style>
   @content
     section.hero.is-fullheight.section--landing
       div.hero-body.has-text-centered
@@ -55,7 +56,7 @@ site-layout title="SheCodes: A Girly Hackathon"
           div.columns
             div.column.wow.bounceInLeft
               b -- Mình tham gia được không?
-              p -- Nếu bạn mang giới tính nữ hoặc [LGBT?] trong độ tuổi từ 13 đến 100 [TODO]
+              p -- Hackathon này mở cho toàn bộ nữ giới trên 14 tuổi.
             div.column.wow.bounceInRight
               b -- Mình không biết code thì sao?
               p -- Thì bạn sẽ học được nhiều hơn. Trước khi hackathon bắt đầu sẽ có Workshops vô cùng đơn giản và thú vị giúp bạn làm quen với công nghệ thông tin.
@@ -121,4 +122,4 @@ site-layout title="SheCodes: A Girly Hackathon"
               p
                 a href="#" -- Facebook Page
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
-    <script>new WOW({offset: 30}).init();</script>
+    <script>new WOW({offset: 30, mobile: false}).init();</script>
