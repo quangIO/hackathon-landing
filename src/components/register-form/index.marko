@@ -13,7 +13,7 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
     label.label for="name"
       b -- Tên *
     div.control
-      <input id="name" pattern="^[a-z]([-']?[a-z]+)*( [a-z]([-']?[a-z]+)*)+$" maxlength="20" data-validation name="name" placeholder="Tên đầy đủ của bạn" required="required" type="text"/>
+      <input id="name" minlength="3" maxlength="20" name="name" placeholder="Tên đầy đủ của bạn" required="required" type="text"/>
   div.field
     label class="label" for="phone"
       b -- Số điện thoại *
@@ -85,11 +85,11 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
         label -- Nghiện trà sữa
   br
   br
-  div.pretty.p-default.p-curve.p-thick.p-smooth
+  div.pretty.p-default.p-curve.p-fill.p-smooth
     input.checkbox name="agree" value="true" checked="checked" type="checkbox" disabled
     div.state.p-success
       label -- Tôi đông ý với các điều khoản đã quy định.
-  div.pretty.p-default.p-curve.p-thick.p-smooth
+  div.pretty.p-default.p-curve.p-fill.p-smooth
     input.checkbox name="wantTeam" value="true" checked="checked" type="checkbox"
     div.state.p-primary
       label -- Tôi muốn ban tổ chức giúp tìm team
