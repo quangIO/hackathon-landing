@@ -31,6 +31,33 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
     div.control
       <input.input-text id="age" name="age" placeholder="18" required="required" data-validation="number" type="number" min="13" max="100" />
   div.field
+    label.label
+      b -- Size áo *
+    div.pretty.p-default.p-round.p-fill.p-pulse
+      input.radio name="shirt" value="XXL" type="radio"
+      div.state.p-warning
+        label -- XXL
+    div.pretty.p-default.p-round.p-fill.p-pulse
+      input.radio name="shirt" value="XL" type="radio"
+      div.state.p-warning
+        label -- XL
+    div.pretty.p-default.p-round.p-fill.p-pulse
+      input.radio name="shirt" value="L" type="radio"
+      div.state.p-warning
+        label -- L
+    div.pretty.p-default.p-round.p-fill.p-pulse
+      input.radio name="shirt" value="M" type="radio" checked
+      div.state.p-warning
+        label -- M
+    div.pretty.p-default.p-round.p-fill.p-pulse
+      input.radio name="shirt" value="S" type="radio"
+      div.state.p-warning
+        label -- S
+    div.pretty.p-default.p-round.p-fill.p-pulse
+      input.radio name="shirt" value="Other" type="radio"
+      div.state.p-warning
+        label -- Other
+  div.field
     <label class="label" for="facebook">Facebook</label>
     div.control
       <input.input-text id="facebook" name="facebook" data-validation-optional="true" placeholder="Bắt đầu với https://" data-validation="url" type="url"/>
