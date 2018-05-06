@@ -15,14 +15,14 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
     div.control
       <input id="name" minlength="3" maxlength="20" name="name" placeholder="Tên đầy đủ của bạn" required="required" type="text"/>
   div.field
-    label.label for="name"
+    label.label for="work"
       b -- Trường/Đơn vị công tác *
     div.control
       <input id="work" name="work" placeholder="Chức vụ | Nghề nghiệp" required="required" type="text"/>
   div.field
     label class="label" for="phone"
       b -- Số điện thoại *
-    div.control
+    div.controlfor
       <input.input-text id="phone" name="phone" placeholder="091xxxxxxx" data-validation="number" required="required" type="tel"/>
 
   div.field
@@ -132,9 +132,9 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
       div.state.p-primary
         label -- Dị ứng
     div.pretty.p-default.p-curve.p-thick.p-smooth
-      input.checkbox name="milkTea" value="true" type="checkbox"
+      input.checkbox name="diet" value="true" type="checkbox"
       div.state.p-primary
-        label -- Nghiện trà sữa
+        label -- Ăn kiêng
   br
   br
   div.pretty.p-default.p-curve.p-fill.p-smooth
@@ -148,6 +148,16 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
   div.field
     br
     button#submit-form name="submit" type="submit" class="gbutton" -- Submit
+
+div.modal#success-modal
+  div.modal-background
+  div.modal-content
+    h1.title -- Đăng kí thành công!
+    h6.subtitle -- ..Bây giờ làm gì nữa?
+    p
+      -- Bạn nhớ tham gia Facebook <a href="#">group</a> và theo dõi <a href="#">page</a> của SheCodes để luôn có thông tin mới nhất nhé. Ngoài ra, đừng ngại <a href="#">chia sẻ</a> cho mọi người cùng biết bạn sẽ tham dự SheCodes hackathon.
+    button.gbutton onclick="location.href='/#timeline';"
+      -- Đến trang chủ
 script src="https://code.jquery.com/jquery-3.3.1.min.js"
 script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"
 <script>
@@ -192,8 +202,7 @@ script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/
           if (data.error) {
             alert(data.error);
           } else {
-            alert("Đăng kí thành công");
-            window.location.href="/#faq";
+            $('#success-modal').addClass("is-active");
           }
       },
     }).then(
