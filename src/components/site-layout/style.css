@@ -51,7 +51,8 @@ body, .title, h1, h2, h3, h4, h5, h6, p {
   margin-left: 1em;
   outline: none;
   text-decoration: none;
-  color: #666;
+  color: #000;
+  font-size: 1.3em;
 }
 .btn .arrow {
   display: inline-block;
@@ -107,10 +108,11 @@ button::-moz-focus-inner {
   font-weight: 300;
 }
 
+
 .section--intro {
   background-repeat:no-repeat;
-  background-image:url(./rose.svg);
-  background-position:calc(15% - 200px) calc(50% + 50px);
+  background-image:url(./banh-beo.svg);
+  background-position:calc(-560px);
 }
 
 .section--about-us {

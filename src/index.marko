@@ -24,29 +24,16 @@ site-layout title="SheCodes: A Girly Hackathon"
           h2.is-size-3.is-size-4-mobile.wow.fadeInUp data-wow-delay="2.3s" -- 7/7/2018 - 8/7/2018
           h4.is-size-4.is-size-5-mobile.wow.fadeInUp data-wow-delay="2s" -- Hanoi, Vietnam
           div
-            a.btn.btn-info.is-bold.wow.flipInX data-wow-delay="1.6s" target="_blank" href="/register"
+            a.btn.btn-info.is-bold.wow.flipInX target="_blank" href="/register"
               -- Đăng kí
-              span.arrow -- ❯
-            a.btn.is-bold.wow.flipInX data-wow-delay="1.8s" href="/#contact-us"
-              -- Trở thành nhà tài trợ
               span.arrow -- ❯
     hero-card.section--intro
       @summary
         -- Ut tempor incurreret instituendarum, de nulla possumus distinguantur ad ab nisi efflorescere, deserunt quae ipsum ne anim non qui quis constias iudicem a te id malis proident et commodo cillum senserit occaecat, iis amet aute anim ullamco. Minim laboris vidisse, quid aliquip de irure irure. Ne expetendis ut officia, quem a fabulas. Senserit te veniam.Incurreret o doctrina te an non summis arbitror. Esse instituendarum appellat malis vidisse. Litteris an amet nescius.
       @content
         timeline-section
-    hero-card.section--about-us
-      @title
-        div.wow.pulse data-wow-duration="1s" data-wow-offset="30" data-wow-iteration="2"
-          span.blinker
-          b#about-us -- Hi, we are ... team
-      @summary
-        div.summary.wow.bounceIn data-wow-duration="0.6s" data-wow-delay=".2s" data-wow-offset="0"
-          -- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      @content
-        about-section
-    hr.rotate-left
-    hero-card.section--faq.rotate-left
+
+    hero-card.section--faq
       @title
         div.wow.rotateInUpLeft data-wow-duration=".3s" data-wow-offset="70"
           // span.blinker
@@ -83,6 +70,16 @@ site-layout title="SheCodes: A Girly Hackathon"
               p
                 -- Trong trường hợp không tìm được câu trả lời thỏa đáng hoặc cô đơn tìm người tâm sự, đừng ngại
                 a href="/#contact-us" --  liên hệ bọn tớ.
+    hero-card.section--about-us
+      @title
+        div.wow.pulse data-wow-duration="1s" data-wow-offset="30" data-wow-iteration="2"
+          span.blinker
+          b#about-us -- Hi, we are ... team
+      @summary
+        div.summary.wow.bounceIn data-wow-duration="0.6s" data-wow-delay=".2s" data-wow-offset="0"
+          -- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      @content
+        about-section
     hr
     hero-card.section--speaker
       @title

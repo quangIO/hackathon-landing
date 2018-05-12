@@ -27,11 +27,13 @@ $ const animDuration = 0.03
 section.container.section--timeline#timeline
   div.columns
     div.column.is-offset-one-fifth
+      h2 -- Ngày 1
       span for(s in day1 | status-var=loop)
         p.wow.fadeIn data-wow-delay="${loop.getIndex() *  animDuration}s" data-wow-offset="-${loop.getIndex()}"
           b -- $!{s[0]} ${' '}
           -- $!{s[1]}
     div.column
+      h2 -- Ngày 2
       span for(s in day2 | status-var=loop)
         p.wow.fadeIn data-wow-delay="${day1.length * animDuration + loop.getIndex() *  animDuration}s" data-wow-offset="-${loop.getIndex()}"
           b -- ${s[0]} ${' '}

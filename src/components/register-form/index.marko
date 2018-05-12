@@ -18,7 +18,7 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
     label.label for="work"
       b -- Trường/Đơn vị công tác *
     div.control
-      <input id="work" name="work" placeholder="Chức vụ | Nghề nghiệp" required="required" type="text"/>
+      <input id="work" name="work" placeholder="Hãy nhập cả ngành học và chức vụ" required="required" type="text"/>
   div.field
     label class="label" for="phone"
       b -- Số điện thoại *
@@ -64,27 +64,28 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
         label -- Other
   div.field
     label.label
+      b -- Kĩ năng *
+      div.control
+        <input.input-text id="skills" name="skills" placeholder="Nhập cách nhau bằng dấu \";\" VD: thiết kế; khảo sát thị trường;" required="required"  />
+  div.field
+    label.label
       b -- Kinh nghiệm lập trình *
-    div.pretty.p-default.p-fill.p-pulse
+    div.pretty.p-default.p-fill.p-pulse.p-round
       input.radio name="skill" value="1" type="radio" checked
       div.state.p-warning
         label -- Chưa bao giờ lập trình
-    div.pretty.p-default.p-fill.p-pulse
+    div.pretty.p-default.p-fill.p-pulse.p-round
       input.radio name="skill" value="2" type="radio"
       div.state.p-warning
         label -- Đã viết các chương trình cơ bản
-    div.pretty.p-default.p-fill.p-pulse
+    div.pretty.p-default.p-fill.p-pulse.p-round
       input.radio name="skill" value="3" type="radio"
       div.state.p-warning
         label -- Am hiểu về OOP, viết được ứng dụng
-    div.pretty.p-default.p-fill.p-pulse
+    div.pretty.p-default.p-fill.p-pulse.p-round
       input.radio name="skill" value="4" type="radio"
       div.state.p-warning
         label -- Polygot | Thiết kế hệ thống vừa và lớn
-    div.pretty.p-default.p-fill.p-pulse
-      input.radio name="skill" value="5" type="radio"
-      div.state.p-warning
-        label -- Mình khủng hơn
   div.field
     <label class="label" for="facebook">Facebook</label>
     div.control
@@ -94,8 +95,7 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
       Giới thiệu qua về bạn (sở thích, vai trò muốn làm trong team, kinh nghiệm lập trình, project muốn làm...)
     </label>
     div.control
-      <textarea id="intro" name="intro" cols="40" rows="5" placeholder="Mình là CEO của ABC, có kinh nghiệm thiết kế database trên PostgreSQL nhưng chưa bao giờ lập trình... Mình có thể thiết kế, khảo sát thị trường... (Bạn cũng có thể viết lời nhắn cho ban tổ chức tại đây.)"
-        aria-describedby="introHelpBlock"/>
+      <textarea id="intro" name="intro" cols="40" rows="5" placeholder="Mình là CEO của ABC, có kinh nghiệm thiết kế database trên PostgreSQL... chưa bao giờ lập trình... đang nghiên cứu về dùng DAG thay blockchain (Bạn cũng có thể viết lời nhắn cho ban tổ chức tại đây.)" />
     p.help#introHelpBlock -- (không bắt buộc)
   div.field
     label.label -- Tôi muốn được hướng dẫn về
@@ -120,21 +120,6 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
       b -- Resume/LinkedIn/CV/Portfolio
     div.control
       <input.input-text id="resume" name="resume" data-validation-optional="true" placeholder="Link đến CV hoặc sản phẩm bạn thấy tự hào" data-validation="url" type="url"/>
-  div.field
-  div.field
-    label.label -- Ăn uống
-    div.pretty.p-default.p-curve.p-thick.p-smooth
-      input.checkbox name="vegan" value="true" type="checkbox"
-      div.state.p-primary
-        label -- Ăn chay
-    div.pretty.p-default.p-curve.p-thick.p-smooth
-      input.checkbox name="allergic" value="true" type="checkbox"
-      div.state.p-primary
-        label -- Dị ứng
-    div.pretty.p-default.p-curve.p-thick.p-smooth
-      input.checkbox name="diet" value="true" type="checkbox"
-      div.state.p-primary
-        label -- Ăn kiêng
   br
   br
   div.pretty.p-default.p-curve.p-fill.p-smooth
