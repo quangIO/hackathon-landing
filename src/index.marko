@@ -1,7 +1,12 @@
 site-layout title="SheCodes: A Girly Hackathon"
   @include
-    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
+    <meta property="og:type" content="product.group">
+    <meta property="og:title" content="SheCodes Hackathon">
+    <meta property="og:url" content="https://shecodes.tech">
+    <meta property="og:image" content="https://i.imgur.com/2gKu06k.png">
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
     link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.0/hint.min.css"
     <style>.wow { visibility: hidden; }</style>
   @content
     section.hero.is-fullheight.section--landing
@@ -21,15 +26,17 @@ site-layout title="SheCodes: A Girly Hackathon"
               <use xlink:href="#s-text" class="text-copy"></use>
             </g>
           </svg>
-          h2.is-size-3.is-size-4-mobile.wow.fadeInUp data-wow-delay="2.3s" -- 7/7/2018 - 8/7/2018
-          h4.is-size-4.is-size-5-mobile.wow.fadeInUp data-wow-delay="2s" -- Hanoi, Vietnam
+          h2.is-size-3.is-size-4-mobile.wow.fadeInUp data-wow-delay="1.3s" -- 7/7/2018 - 8/7/2018
+          h4.is-size-4.is-size-5-mobile.wow.fadeInUp data-wow-delay="1s" -- Hanoi, Vietnam
           div
             a.btn.btn-info.is-bold.wow.flipInX target="_blank" href="/register"
               -- Đăng kí
               span.arrow -- ❯
     hero-card.section--intro
       @summary
-        -- Ut tempor incurreret instituendarum, de nulla possumus distinguantur ad ab nisi efflorescere, deserunt quae ipsum ne anim non qui quis constias iudicem a te id malis proident et commodo cillum senserit occaecat, iis amet aute anim ullamco. Minim laboris vidisse, quid aliquip de irure irure. Ne expetendis ut officia, quem a fabulas. Senserit te veniam.Incurreret o doctrina te an non summis arbitror. Esse instituendarum appellat malis vidisse. Litteris an amet nescius.
+        -- SheCodes là <span class="hint--top hint--info hint--large hint--bounce" aria-label="Hackathon là tên gọi của một sự kiện phát triển phần mềm hoặc ứng dụng công nghệ, diễn ra trong một khoảng thời gian ngắn (24 - 36 tiếng). Tại một Hackathon, người tham dự có cơ hội vừa học hỏi, vừa thư giãn, đồng thời sử dụng công nghệ để giải quyết các vấn đề thực tiễn trong đời sống. Các dự án thường được “hack” trong một hackathon bao gồm: website, ứng dụng điện thoại, game, ứng dụng thực tế ảo (Virtual Reality), phần cứng, v.v.">hackathon</span> đầu tiên tại Việt Nam dành riêng cho học sinh và sinh viên nữ, với mục tiêu truyền cảm hứng cho phái nữ trở nên tự tin hơn, đồng thời rút ngắn khoảng cách về giới tính trong lĩnh vực công nghệ thông tin. Người tham dự, bất kể kiến thức lập trình, sẽ nhận được sự hướng dẫn từ các mentors, được tham dự vào các workshops và panels công nghệ “hot” hiện nay. Ngoài ra, các “hackers” có cơ hội tham gia vào sự kiện networking với nhiều công ty công nghệ, cũng như các trò chơi và hoạt động giải trí.
+        br
+        br
       @content
         timeline-section
 
@@ -42,59 +49,67 @@ site-layout title="SheCodes: A Girly Hackathon"
         div.container.question-answer
           div.columns
             div.column.wow.bounceInLeft
-              b -- Mình tham gia được không?
-              p -- Hackathon này mở cho toàn bộ nữ giới trên 14 tuổi.
+              b -- Ai có thể tham dự SheCodes?
+              p -- Tất cả <u><i>nữ giới</i></u>, với bất kì khả năng lập trình nào, đều có thể tham dự.
             div.column.wow.bounceInRight
-              b -- Mình không biết code thì sao?
-              p -- Thì bạn sẽ học được nhiều hơn. Trước khi hackathon bắt đầu sẽ có Workshops vô cùng đơn giản và thú vị giúp bạn làm quen với công nghệ thông tin.
+              b -- Một đội có bao nhiêu người?
+              p -- Có thể có tối đa 4 người và tối thiểu là 1 người.
           div.columns data-wow-delay=".2s"
             div.column.wow.bounceInLeft
               b -- Cần phải có team trước khi đến không?
-              p -- Không, bạn sẽ có thời gian và giúp đỡ từ bọn mình để networking và tìm đội. Nếu bạn thích làm một mình thì cũng không sao cả.
+              p -- Không, bạn sẽ có thời gian để tìm đồng đội ngay trong sự kiện chính.
             div.column.wow.bounceInRight
               b -- Lúc đi nên mang gì?
-              p -- Những thứ bạn cần để "hacking": Máy tính, điện thoại, phần cứng... Ngoài ra bạn có thể cầm theo bàn chải, khăn mặt.
+              p -- Laptop, điện thoại, sạc, dây nối điện thoại với laptop,... Ngoài ra bạn có thể mang thêm chăn, gối, bàn chải, khăn mặt, dụng cụ cá nhân
+
           div.columns data-wow-delay=".6s"
             div.column.wow.bounceInLeft
-              b -- Tại sao hackathon này chỉ giới hạn cho phụ nữ?
-              p -- [TODO]
+              b -- Có thể dùng sản phẩm làm từ trước không?
+              p -- Được nhưng để đảm bảo sự công bằng, ban giám khảo sẽ chỉ đánh giá công việc bạn làm trong thời gian diễn ra sự kiện.
             div.column.wow.bounceInRight
-              b -- Ăn uống thế nào?
-              p -- Bọn mình sẽ cung cấp đồ ăn và coffee miễn phí trong thời gian hackathon.
+              b -- Tham dự SheCodes có mất phí không?
+              p -- SheCodes là một sự kiện hoàn toàn miễn phí. Người tham dự sẽ được cung cấp đồ ăn, snacks, cà phê, chỗ ngủ, không gian và những điều kiện cần thiết để lập trình.
           div.columns data-wow-delay=".9s"
             div.column.wow.bounceInLeft
-              b -- Địa điểm có chỗ ngủ không?
-              p -- [TODO]
+              b -- Mình không biết code thì sao?
+              p -- Đừng lo! Học hỏi luôn là một phần quan trọng của tất cả các hackathon. SheCodes sẽ có các workshops về nhiều chủ đề lập trình đơn giản và thú vị, cùng một đội ngũ mentors luôn sẵn sàng giúp đỡ bạn.
             div.column.wow.bounceInRight
               b -- Các bạn trả lời câu hỏi của mình kĩ hơn được không?
               p
-                -- Trong trường hợp không tìm được câu trả lời thỏa đáng hoặc cô đơn tìm người tâm sự, đừng ngại
-                a href="/#contact-us" --  liên hệ bọn tớ.
-    hero-card.section--about-us
+                -- Trong trường hợp không tìm được câu trả lời thỏa đáng đừng ngần ngại
+                a href="/#contact-us" --  liên hệ với ban tổ chức ngay.
+    hero-card.section--judge
       @title
-        div.wow.pulse data-wow-duration="1s" data-wow-offset="30" data-wow-iteration="2"
-          span.blinker
-          b#about-us -- Hi, we are ... team
+        -- Tiêu chí đánh giá sản phẩm là gì?
       @summary
-        div.summary.wow.bounceIn data-wow-duration="0.6s" data-wow-delay=".2s" data-wow-offset="0"
-          -- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      @content
-        about-section
+        div.wow.fadeInDown.has-text-centered.is-size-4 data-wow-delay=".6s" data-wow-duration="1s" -- Sản phẩm sẽ được đánh giá trên tính sáng tạo, giá trị đem lại, trải nghiệm người dùng, và tính hoàn thiện.
+
     hr
     hero-card.section--speaker
       @title
         div.wow.fadeIn data-wow-duration="1s"
           // span.blinker
           b#speaker -- Diễn giả
+      @content
+        speaker-section
+    hero-card.section--about-us
+      @title
+        div.wow.pulse data-wow-duration="1s" data-wow-offset="30" data-wow-iteration="2"
+          span.blinker
+          b#about-us -- Chào, chúng tôi là
       @summary
-        -- Nisi nescius a relinqueret, excepteur ex mandaremus hic excepteur praesentibus hic nostrud nam laboris quem multos ad anim. Nam sunt iudicem o tempor excepteur  commodo sed consequat praetermissum ea laboris, noster possumus voluptatibus  te et cupidatat ex ingeniis e ullamco tamen sint id legam id deserunt eram nam admodum coniunctione, eu tamen velit ita pariatur. Malis quamquam familiaritatem.Nescius qui mandaremus. An te sunt mandaremus, et anim ad amet, a quis veniam labore mandaremus, litteris comprehenderit an quibusdam. Quae eiusmod concursionibus, hic sunt illustriora, malis offendit constias, a deserunt tractavissent ea anim senserit distinguantur, ullamco dolore veniam ab nulla est ea legam dolor ea quibusdam ex ubi tempor nostrud reprehenderit. Nisi nescius a relinqueret, excepteur ex mandaremus hic excepteur praesentibus hic nostrud nam laboris quem multos ad anim. Nam sunt iudicem o tempor excepteur  commodo sed consequat praetermissum ea laboris, noster possumus voluptatibus  te et cupidatat ex ingeniis e ullamco tamen sint id legam id deserunt eram nam admodum coniunctione, eu tamen velit ita pariatur. Malis quamquam familiaritatem.Nescius qui mandaremus. An te sunt mandaremus, et anim ad amet, a quis veniam labore mandaremus, litteris comprehenderit an quibusdam. Quae eiusmod concursionibus, hic sunt illustriora, malis offendit constias, a deserunt tractavissent ea anim senserit distinguantur, ullamco dolore veniam ab nulla est ea legam dolor ea quibusdam ex ubi tempor nostrud reprehenderit.
+        div.summary.wow.bounceIn data-wow-duration="0.6s" data-wow-delay=".2s" data-wow-offset="0"
+          -- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      @content
+        about-section
     hero-card.section--sponsor
       @title
         div.wow.pulse data-wow-offset="30" data-wow-iteration="2"
           // span.blinker
           b#sponsor -- Nhà tài trợ
+        small.wow.fadeInDown.subtitle -- Cảm ơn những nhà tài trợ hào phóng đã giúp đem lại sự hoàn thiện cho SheCodes
       @summary
-        -- Nisi nescius a relinqueret, excepteur ex mandaremus hic excepteur praesentibus hic nostrud nam laboris quem multos ad anim. Nam sunt iudicem o tempor excepteur  commodo sed consequat praetermissum ea laboris, noster possumus voluptatibus  te et cupidatat ex ingeniis e ullamco tamen sint id legam id deserunt eram nam admodum coniunctione, eu tamen velit ita pariatur. Malis quamquam familiaritatem.Nescius qui mandaremus. An te sunt mandaremus, et anim ad amet, a quis veniam labore mandaremus, litteris comprehenderit an quibusdam. Quae eiusmod concursionibus, hic sunt illustriora, malis offendit constias, a deserunt tractavissent ea anim senserit distinguantur, ullamco dolore veniam ab nulla est ea legam dolor ea quibusdam ex ubi tempor nostrud reprehenderit.
+        object#sponsor-svg data="https://cdn.rawgit.com/quangIO/5f516fb3f353a29db3d770dc09089aeb/raw/365381e3d9b684dc1c9ad29f30039f81a05b00a3/spnsors.svg" type="image/svg+xml"
     hero-card.section--contact
       @title
         div.wow.fadeInUp
@@ -117,7 +132,7 @@ site-layout title="SheCodes: A Girly Hackathon"
               p
                 a href="mailto:team@shecodes.tech" -- Email Us
               p
-                a href="#" -- Facebook Page
+                a href="https://fb.com/shecodeshackathon2018" -- Facebook Page
     div.is-size-7.has-text-centered.has-text-weight-light
       a.has-text-black-ter href="https://0xf.tech/" -- Designed With Love by Quang Luong @ 0xf.tech
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>

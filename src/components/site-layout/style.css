@@ -17,6 +17,11 @@ body, .title, h1, h2, h3, h4, h5, h6, p {
   color: white !important;
 }
 
+.card {
+  background-color: inherit;
+  box-shadow: none;
+}
+
 .has-text-weight-extra-light {
   font-weight: 200 !important;
 }
@@ -38,6 +43,12 @@ body, .title, h1, h2, h3, h4, h5, h6, p {
 
 .media-left {
   margin-right: 0;
+}
+
+.card .image {
+  -webkit-box-shadow: 0px 4px 19px 4px rgba(116,109,122,0.69);
+  -moz-box-shadow: 0px 4px 19px 4px rgba(116,109,122,0.69);
+  box-shadow: 0px 4px 19px 4px rgba(116,109,122,0.69);
 }
 
 .btn {
