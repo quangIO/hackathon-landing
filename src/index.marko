@@ -61,7 +61,6 @@ site-layout title="SheCodes: A Girly Hackathon"
             div.column.wow.bounceInRight
               b -- Lúc đi nên mang gì?
               p -- Laptop, điện thoại, sạc, dây nối điện thoại với laptop,... Ngoài ra bạn có thể mang thêm chăn, gối, bàn chải, khăn mặt, dụng cụ cá nhân
-
           div.columns data-wow-delay=".6s"
             div.column.wow.bounceInLeft
               b -- Có thể dùng sản phẩm làm từ trước không?
@@ -69,6 +68,13 @@ site-layout title="SheCodes: A Girly Hackathon"
             div.column.wow.bounceInRight
               b -- Tham dự SheCodes có mất phí không?
               p -- SheCodes là một sự kiện hoàn toàn miễn phí. Người tham dự sẽ được cung cấp đồ ăn, snacks, cà phê, chỗ ngủ, không gian và những điều kiện cần thiết để lập trình.
+          div.columns data-wow-delay=".8s"
+            div.column.wow.bounceInLeft
+              b -- Tiêu chí đánh giá sản phẩm là gì?
+              p -- Sản phẩm sẽ được đánh giá trên tính sáng tạo, giá trị đem lại, trải nghiệm người dùng, và tính hoàn thiện.
+            div.column.wow.bounceInRight
+              b -- Ai có thể tham dự workshops và panels?
+              p -- Mặc dù hackathon chỉ dành cho phụ nữ nhưng workshops và panels mở cho <strong>tất cả mọi người</strong>.
           div.columns data-wow-delay=".9s"
             div.column.wow.bounceInLeft
               b -- Mình không biết code thì sao?
@@ -78,12 +84,6 @@ site-layout title="SheCodes: A Girly Hackathon"
               p
                 -- Trong trường hợp không tìm được câu trả lời thỏa đáng đừng ngần ngại
                 a href="/#contact-us" --  liên hệ với ban tổ chức ngay.
-    hero-card.section--judge
-      @title
-        -- Tiêu chí đánh giá sản phẩm là gì?
-      @summary
-        div.wow.fadeInDown.has-text-centered.is-size-4 data-wow-delay=".6s" data-wow-duration="1s" -- Sản phẩm sẽ được đánh giá trên tính sáng tạo, giá trị đem lại, trải nghiệm người dùng, và tính hoàn thiện.
-
     hr
     hero-card.section--speaker
       @title
@@ -106,10 +106,36 @@ site-layout title="SheCodes: A Girly Hackathon"
       @title
         div.wow.pulse data-wow-offset="30" data-wow-iteration="2"
           // span.blinker
-          b#sponsor -- Nhà tài trợ
-        small.wow.fadeInDown.subtitle -- Cảm ơn những nhà tài trợ hào phóng đã giúp đem lại sự hoàn thiện cho SheCodes
-      @summary
-        object#sponsor-svg data="https://cdn.rawgit.com/quangIO/5f516fb3f353a29db3d770dc09089aeb/raw/365381e3d9b684dc1c9ad29f30039f81a05b00a3/spnsors.svg" type="image/svg+xml"
+          b#sponsor.wow.fadeInDown -- Cảm ơn đến
+      @content
+        div.columns
+          div.has-text-centered.column
+            h1
+              span.blinker.diamond
+              -- Nhà tài trợ kim cương
+            <object height="150" data="./assets/Asset 3.svg" type="image/svg+xml" id="sponsor-svg-1"></object>
+        div.columns
+          div.column.has-text-centered
+            h2 -- Nhà tài trợ đồng
+            p
+              <object width="250" data="./assets/Asset 2.svg" type="image/svg+xml" id="sponsor-svg-2"></object>
+            p
+              <object width="250" data="./assets/Asset 1.svg" type="image/svg+xml" id="sponsor-svg-3"></object>
+          div.has-text-centered.column
+            h1
+              span.blinker.gold 
+              -- Nhà tài trợ vàng
+            <object height="250" data="./assets/Asset 6.svg" type="image/svg+xml" id="sponsor-svg-4"></object>
+          div.has-text-centered.column
+            h1 -- Nhà tài trợ giải thưởng
+            <object width="250" data="./assets/Asset 4.svg" type="image/svg+xml" id="sponsor-svg-5"></object>
+        h2.has-text-centered.column -- Cùng với sự giúp đỡ từ
+        div.columns.has-text-centered
+          div.column
+            <object height="50" data="./assets/Asset 5.svg" type="image/svg+xml" id="sponsor-svg-6"></object>
+          div.column
+            <object height="100" data="./assets/Asset 7.svg" type="image/svg+xml" id="sponsor-svg-7"></object>
+
     hero-card.section--contact
       @title
         div.wow.fadeInUp
@@ -128,12 +154,12 @@ site-layout title="SheCodes: A Girly Hackathon"
                 div data-netlify-recaptcha
                 p
                   button.gbutton name="submit" type="submit" -- Gửi
-            div.column.is-pulled-right-desktop.has-text-centered-mobile
+            div.column.has-text-centered-mobile
               p
                 a href="mailto:team@shecodes.tech" -- Email Us
               p
                 a href="https://fb.com/shecodeshackathon2018" -- Facebook Page
     div.is-size-7.has-text-centered.has-text-weight-light
-      a.has-text-black-ter href="https://0xf.tech/" -- Designed With Love by Quang Luong @ 0xf.tech
+      a.has-text-black-ter href="https://devel.faith" -- Designed With Love by Quang Luong @ devel.faith
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
     <script>new WOW({offset: 30, mobile: false}).init();</script>

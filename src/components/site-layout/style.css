@@ -201,6 +201,17 @@ hr {
   background: rebeccapurple;
 }
 
+.gold {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  background: gold;
+  animation-duration: 2.5s;
+}
+.diamond {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  background: darkturquoise;
+  animation-duration: 2.1s;
+}
+
 @keyframes blinker {
   from {
     opacity: 1.0;
@@ -216,7 +227,7 @@ input[type=text], input[type="email"], textarea, .input-text {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  max-width: 600px;
+  max-width: 700px;
   width: calc(100% - 80px);
   width: 100%;
   cursor: pointer;
@@ -264,7 +275,7 @@ input[type=text]:hover, input[type=email]:hover, textarea:hover, .input-text:hov
 }
 
 input[type=text]:focus, input[type=email]:focus, textarea:focus, .input-text:focus {
-  max-width: 700px;
+  max-width: 800px;
   width: calc(100%);
   cursor: default;
   padding: -13px 20px 0;
