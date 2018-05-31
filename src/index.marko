@@ -179,3 +179,11 @@ site-layout title="SheCodes: A Girly Hackathon"
       a.has-text-black-ter href="https://devel.faith" -- Designed With Love by Quang Luong @ devel.faith
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
     <script>new WOW({offset: 30, mobile: false}).init();</script>
+    <script>
+      if(window.innerWidth <= 800 && Boolean(window.chrome)) {
+        var logos = document.body.getElementsByTagName("object");
+        for (let logo of logos) {
+          logo.removeAttribute("height");
+        }
+      }
+    </script>
