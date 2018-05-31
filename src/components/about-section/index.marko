@@ -31,6 +31,6 @@ $ function shuffle(array) {
 }
 br
 br
-div.columns.is-desktop for(row in shuffle(profiles) | status-var=loopRow) data-wow-offset="100"
+div.columns for(row in shuffle(profiles) | status-var=loopRow) data-wow-offset="100"
   div.wow.column class=((loopRow.getIndex() % 2 ? "fadeInLeft" : "fadeInRight")) data-wow-delay="${(loopRow.getIndex() * row.length * 0 + (loopRow.getIndex() % 2 == 0 ? loopCol.getIndex() : (col.length - loopCol.getIndex() - 1))) * animDelay}s" for(col in shuffle(row) | status-var=loopCol)
     user-profile name=col[0] header=col[1] introduction=col[3] img=col[2]
