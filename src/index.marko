@@ -88,10 +88,15 @@ site-layout title="SheCodes: A Girly Hackathon"
     hero-card.section--speaker
       @title
         div.wow.fadeIn data-wow-duration="1s"
-          // span.blinker
           b#speaker -- Diễn giả
       @content
         speaker-section
+    hero-card.judge--speaker
+      @title
+        div.wow.fadeIn data-wow-duration="1s"
+          b#judge -- Giám khảo
+      @content
+        judge-section
     hero-card.section--about-us
       @title
         div.wow.pulse data-wow-duration="1s" data-wow-offset="30" data-wow-iteration="2"
@@ -126,22 +131,27 @@ site-layout title="SheCodes: A Girly Hackathon"
           div.has-text-centered.column
             h1 -- Nhà tài trợ giải thưởng
             <object width="250" data="./assets/Asset 4.svg" type="image/svg+xml" id="sponsor-svg-5"></object>
-        h2.has-text-centered.column -- Đồng hành cùng
+        h2.has-text-centered -- Nhà tài trợ truyền thông 
+        div.columns
+          div.column.has-text-centered
+            <object height="60" data="./assets/Asset 5.svg" type="image/svg+xml" id="sponsor-svg-6"></object>
+          div.column.has-text-centered
+            <object height="100" data="./assets/Asset 7.svg" type="image/svg+xml" id="sponsor-svg-8"></object>
+          div.column.has-text-centered
+            <object height="100" data="./assets/Asset 13.svg" type="image/svg+xml" id="sponsor-svg-13"></object>
         div.columns.has-text-centered
-          div.column
-            <object height="50" data="./assets/Asset 5.svg" type="image/svg+xml" id="sponsor-svg-6"></object>
-          div.column
-            <object height="100" data="./assets/Asset 8.svg" type="image/svg+xml" id="sponsor-svg-7"></object>
-          div.column
-            <object height="140" data="./assets/Asset 7.svg" type="image/svg+xml" id="sponsor-svg-8"></object>
-          div.column
+        h2.has-text-centered -- Công ty khách mời
+        div.columns.has-text-centered
+          div.column.has-text-centered
+            <object height="130" data="./assets/Asset 8.svg" type="image/svg+xml" id="sponsor-svg-7"></object>
+          div.column.has-text-centered
             <object height="140" data="./assets/Asset 12.svg" type="image/svg+xml" id="sponsor-svg-12"></object>
-          div.column
+          div.column.has-text-centered
             <object height="140" data="./assets/Asset 10.svg" type="image/svg+xml" id="sponsor-svg-9"></object>
-          div.column
-            <object height="100" data="./assets/Asset 9.svg" type="image/svg+xml" id="sponsor-svg-10"></object>
-          div.column
-            <object height="100" data="./assets/Asset 11.svg" type="image/svg+xml" id="sponsor-svg-11"></object>
+          div.column.has-text-centered
+            <object height="140" data="./assets/Asset 9.svg" type="image/svg+xml" id="sponsor-svg-10"></object>
+          div.column.has-text-centered
+            <object height="140" data="./assets/Asset 11.svg" type="image/svg+xml" id="sponsor-svg-11"></object>
 
     hero-card.section--contact
       @title

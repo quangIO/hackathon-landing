@@ -11,14 +11,16 @@ class {
 div.profile on-click('toggle')
     article.media
         div.media-left
-            figure.image.is-128x128
+            figure.image.is-128x128.is-hidden-mobile
+                img src="${input.img}" alt="Image"
+            figure.image.is-64x64.is-hidden-tablet
                 img src="${input.img}" alt="Image"
         div.media-content
             div.content
                 p
                     <b>${input.name}</b> <small>${input.header}</small>
                     <br>
-                    -- ${input.introduction.substring(0, 201) + ((input.introduction.length > 200) ? '...' : '')}
+                    -- ${input.introduction.substring(0, 202) + ((input.introduction.length > 201) ? '...' : '')}
 div class=["modal", state.active && "is-active"]
   <div class="modal-background"></div>
   <div on-click('toggle') class="modal-background"></div>

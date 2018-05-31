@@ -17,6 +17,8 @@ body, .title, h1, h2, h3, h4, h5, h6, p {
   color: white !important;
 }
 
+.centered-and-cropped { object-fit: cover; }
+
 .card {
   background-color: inherit;
   box-shadow: none;

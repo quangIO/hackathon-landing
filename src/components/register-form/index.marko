@@ -37,6 +37,11 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
       <input.input-text id="age" name="age" placeholder="18" required="required" data-validation="number" type="number" min="13" max="100" />
   div.field
     label.label
+      b -- Kĩ năng *
+      div.control
+        <input.input-text id="skills" name="skills" placeholder="Nhập cách nhau bằng dấu \";\" VD: thiết kế; khảo sát thị trường;" required="required"  />
+  div.field
+    label.label
       b -- Size áo *
     div.pretty.p-default.p-round.p-fill.p-pulse
       input.radio name="shirt" value="XXL" type="radio"
@@ -58,11 +63,6 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
       input.radio name="shirt" value="S" type="radio"
       div.state.p-warning
         label -- S
-  div.field
-    label.label
-      b -- Kĩ năng *
-      div.control
-        <input.input-text id="skills" name="skills" placeholder="Nhập cách nhau bằng dấu \";\" VD: thiết kế; khảo sát thị trường;" required="required"  />
   div.field
     label.label
       b -- Kinh nghiệm lập trình *
@@ -129,6 +129,7 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
   div.field
     br
     button#submit-form name="submit" type="submit" class="gbutton" -- Submit
+  p -- <b>Lưu ý:</b> nếu bạn đã có đội thì các thành viên trong đội bạn vẫn phải điền form này.
 
 div.modal#success-modal
   div.modal-background
@@ -136,7 +137,9 @@ div.modal#success-modal
     h1.title -- Đăng kí thành công!
     h6.subtitle -- ..Bây giờ làm gì nữa?
     p
-      -- Bạn nhớ tham gia Facebook <a href="#">group</a> và theo dõi <a href="https://fb.com/shecodeshackathon2018">page</a> của SheCodes để luôn có thông tin mới nhất nhé. Ngoài ra, đừng ngại <a href="#">chia sẻ</a> cho mọi người cùng biết bạn sẽ tham dự SheCodes hackathon.
+      -- Bạn nhớ tham gia Facebook <a target="_blank" href="https://www.facebook.com/groups/176927216340521/">group</a> và theo dõi <a target="_blank" href="https://fb.com/shecodeshackathon2018">page</a> của SheCodes để luôn có thông tin mới nhất nhé. Ngoài ra, đừng ngại <a href="#" onClick="MyWindow=window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A//shecodes.tech/','MyWindow','width=600,height=300'); return false;">chia sẻ</a> cho mọi người cùng biết bạn sẽ tham dự SheCodes hackathon.
+    p
+      -- Học lập trình? SheCodes Blog sẽ ra <a target="_blank" href="https://blog.shecodes.tech/">các bài viết hướng dẫn phát triển app di động </a>.
     button.gbutton onclick="location.href='/#timeline';"
       -- Đến trang chủ
 script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
@@ -159,22 +162,26 @@ script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/
           return o;
       };
   })(jQuery);
+  $.validate();
   var $form = $('#form--register');
   var url = 'https://script.google.com/macros/s/AKfycbxzi9nFlQOb-lCg1MJ8AbrswF8b6ATol5mX5fgpiuzoxcoun5jp/exec';
-  function validateData(data) {
-
-  }
-  $.validate();
   $('#submit-form').on('click', function(e) {
     let vm = this;
     e.preventDefault();
     let data = $('#form--register').serializeFormJSON();
-    console.log(data);
+    errors = [];
+    for (let k in data) {
+      if (document.getElementById(k) && !document.getElementById(k).checkValidity()) {
+        alert("Form with id: " + k + " does not valid. If you believe this is an error, please contact fb.com/quangltm")
+        return;
+      }
+    }
     let jqxhr = $.ajax({
       url: url,
       method: "GET",
       dataType: "json",
-      data: $('#form--register').serializeFormJSON(),
+      data: data,
+
       error: function (xhr, ajaxOptions, thrownError) {
         alert(xhr.responseText);
       },

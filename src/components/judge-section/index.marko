@@ -1,0 +1,14 @@
+
+$ const profiles = [
+  [
+    [],
+    ["Phạm Huy", "Accelerator Coach @ Vietnam Sillicon Valley", "https://i.imgur.com/NPpg0JZ.png"],
+    ["Lưu San", "Vice Director @ Innovatube", "https://i.imgur.com/n99Fy1l.png"],
+  ]
+]
+$ const animDelay = .15
+div.container
+  div.columns.has-text-centered for(row in profiles | status-var=loopRow) data-wow-offset="100"
+    div.wow.column.is-one-third class=((loopRow.getIndex() % 2 ? "zoomIn" : "zoomIn")) data-wow-delay="${Math.random()}s" for(col in row | status-var=loopCol)
+      if(col.length == 3)
+        speaker name=col[0] title=col[1] image=col[2]

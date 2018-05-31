@@ -8,11 +8,12 @@ $ const profiles = [
   [
     ["Tạ Thanh Huyền", "Ecommerce Manager @ Canifa", "https://i.imgur.com/OVZQuxj.png"],
     ["Phan Hoàng Lan", "30 Under 30 Forbes VN", "http://cafefcdn.com/thumb_w/650/2018/4/27/photo1524802113322-1524802113324217946217.jpg"],
-    ["Bạn", "Người truyền cảm hứng", "http://www.muttr.com/public/assets/images/avatars/Moonbeam.jpg"]
+    [""]
   ]
 ]
 $ const animDelay = .15
 div.container
   div.columns for(row in profiles | status-var=loopRow) data-wow-offset="100"
     div.wow.column class=((loopRow.getIndex() % 2 ? "zoomIn" : "zoomIn")) data-wow-delay="${Math.random()}s" for(col in row | status-var=loopCol)
-      speaker name=col[0] title=col[1] image=col[2]
+      if(col.length == 3)
+        speaker name=col[0] title=col[1] image=col[2]
