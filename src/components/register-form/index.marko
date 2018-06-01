@@ -39,7 +39,7 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
     label.label
       b -- Kĩ năng *
       div.control
-        <input.input-text id="skills" name="skills" placeholder="Nhập cách nhau bằng dấu \";\" VD: thiết kế; khảo sát thị trường;" required="required"  />
+        <input.input-text.data-hj-whitelist id="skills" name="skills" placeholder="Nhập cách nhau bằng dấu \";\" VD: thiết kế; khảo sát thị trường;" required="required"  />
   div.field
     label.label
       b -- Size áo *
@@ -85,13 +85,13 @@ form#form--register action="https://formaholic.com/f/a026d1f3ce6f9baf" method="P
   div.field
     <label class="label" for="facebook">Facebook</label>
     div.control
-      <input.input-text id="facebook" name="facebook" data-validation-optional="true" placeholder="Bắt đầu với https://" data-validation="url" type="url"/>
+      <input.input-text.data-hj-whitelist id="facebook" name="facebook" data-validation-optional="true" placeholder="Bắt đầu với https://" data-validation="url" type="url"/>
   div.field
     <label class="label" for="intro">
       Giới thiệu qua về bạn (sở thích, vai trò muốn làm trong team, kinh nghiệm lập trình, project muốn làm...)
     </label>
     div.control
-      <textarea id="intro" name="intro" cols="40" rows="5" placeholder="Mình là CEO của ABC, có kinh nghiệm thiết kế database trên PostgreSQL... chưa bao giờ lập trình... đang nghiên cứu về dùng DAG thay blockchain (Bạn cũng có thể viết lời nhắn cho ban tổ chức tại đây.)" />
+      <textarea.data-hj-whitelist id="intro" name="intro" cols="40" rows="5" placeholder="Mình là CEO của ABC, có kinh nghiệm thiết kế database trên PostgreSQL... chưa bao giờ lập trình... đang nghiên cứu về dùng DAG thay blockchain (Bạn cũng có thể viết lời nhắn cho ban tổ chức tại đây.)" />
     p.help#introHelpBlock -- (không bắt buộc)
   div.field
     label.label -- Tôi muốn được hướng dẫn về
