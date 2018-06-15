@@ -5,19 +5,19 @@ static const day1 = [
   ["12:00", "Hacking bắt đầu"],
   ["12:30", "Bữa trưa"],
   ["13:30", "Workshop Xây dựng Mobile App với Fuse"],
-  ["15:00", "Workshop Lập trình cơ bản"],
+  ["15:00", "Workshop An inh mạng - Cốc Cốc"],
   ["16:00", "Workshop Làm website không cần lập trình"],
   ["17:00", "Bữa chiều"],
   ["17:30", "Panel: Women in Tech"],
   ["19:00", "Bữa tối"],
-  ["20:30", "Workshop API"],
+  ["19:30", "Talkshow: Blockchain - Nhiều hơn một khía cạnh"]. 
+  ["20:30", "Workshop Lập trình cơ bản"],
   ["21:00", "Networking event: Trình bày ý tưởng ngẫu hứng"],
   ["22:00", "Break: Let’s do facemask!!"],
   ["23:00", "Late night breakfast. Sắp xếp chỗ ngủ"]]
 static const day2 = [
   ["07:00", "Yoga"],
   ["07:30", "Bữa sáng"],
-  ["10:30", "Talkshow: The future of blockchain"],
   ["12:00", "Bữa trưa. Hacking kết thúc"],
   ["13:00", "Trình bày dự án. Đánh giá"],
   ["14:00", "Lễ trao giải"],
@@ -29,13 +29,13 @@ $ const animDuration = 0.03
 section.container.section--timeline#timeline
   div.columns
     div.column.is-offset-one-fifth
-      h2 -- Ngày 7/7
+      h2 -- Ngày 14/7
       span for(s in day1 | status-var=loop)
         p.wow.fadeIn data-wow-delay="${loop.getIndex() *  animDuration}s" data-wow-offset="-${loop.getIndex()}"
           b -- $!{s[0]} ${' '}
           -- $!{s[1]}
     div.column
-      h2 -- Ngày 8/7
+      h2 -- Ngày 15/7
       span for(s in day2 | status-var=loop)
         p.wow.fadeIn data-wow-delay="${day1.length * animDuration + loop.getIndex() *  animDuration}s" data-wow-offset="-${loop.getIndex()}"
           b -- ${s[0]} ${' '}
