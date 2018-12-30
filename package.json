@@ -11,7 +11,7 @@
     "eslint": "4.19.1",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-prettier": "2.6.0",
-    "prettier": "1.11.1"
+    "prettier": "1.15.3"
   },
   "dependencies": {
     "marko": "4.14.12",
